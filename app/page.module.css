@@ -9,7 +9,9 @@
   align-items: center;
 }
 
-.offerSection {
+.offerSection,
+.cardSection,
+.contactSection {
   background-color: white;
   position: relative;
   display: flex;
@@ -17,12 +19,27 @@
   justify-content: center;
 }
 
+.offers {
+  display: flex;
+}
+
 .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 350px;
   height: 250px;
   background-color: #ff6f61;
   border-radius: 30px;
   margin: 40px 20px;
+  color: white;
+  transition: all 0.4s;
+}
+
+.offer:hover {
+  transform: scale(115%);
+  transition: all 0.4s;
 }
 
 .title {
@@ -31,6 +48,8 @@
 }
 
 .cards {
+  margin-top: 100px;
+  width: 55%;
   display: flex;
   justify-content: center;
   gap: 5px;
