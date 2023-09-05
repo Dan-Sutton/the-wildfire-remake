@@ -1,0 +1,66 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.questionRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.expandButton {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  transform: scale(3);
+}
+
+.expandIcon {
+  font-size: 20px;
+  z-index: 10;
+  user-select: none;
+  transform: translateX(-1px);
+  transition: all 0.3s;
+  line-height: 0px;
+}
+
+.expandedExit {
+  font-size: 20px;
+  z-index: 10;
+  user-select: none;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+  line-height: 0px;
+}
+
+.descriptionRow {
+  border-bottom: 3px solid var(--primary);
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: all 0.3s;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.descriptionRowHidden {
+  color: var(--highlight);
+  height: 0px;
+  overflow: hidden;
+  padding-bottom: -20px;
+  border-bottom: 3px solid var(--primary);
+  transition: all 0.3s;
+  font-size: 17px;
+  letter-spacing: 2px;
+}

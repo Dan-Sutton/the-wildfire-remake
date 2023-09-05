@@ -1,0 +1,50 @@
+.navbar {
+  position: fixed;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  color: white;
+  overflow-x: hidden;
+  background-color: var(--primary);
+  top: 0;
+  z-index: 10;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.links > span,
+.links > .link {
+  user-select: none;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.links > span:hover {
+  border-bottom: 1px solid white;
+  transition: all 0.5s;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.the {
+  font-weight: lighter;
+}
+
+.wildfire {
+  font-weight: bold;
+  letter-spacing: 3px;
+}

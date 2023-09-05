@@ -1,0 +1,53 @@
+.songs {
+  margin-top: 80px;
+}
+
+.songs section {
+  padding: 40px;
+  background-color: var(--highlight);
+  color: var(--primary);
+}
+
+.info h2 {
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.info > p {
+  padding: 10px 10vw;
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.songsList {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 60px;
+}
+
+.songsList li {
+  font-size: 17px;
+  letter-spacing: 3px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.message > h3 {
+  font-size: 23px;
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+.message > p {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 15px;
+  line-height: 24px;
+}

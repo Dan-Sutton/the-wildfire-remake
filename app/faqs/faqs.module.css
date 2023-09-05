@@ -1,0 +1,29 @@
+.faqs {
+  margin-top: 80px;
+}
+
+.faqs section {
+  padding: 40px;
+  background-color: var(--highlight);
+  color: var(--primary);
+}
+
+.info h2 {
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.info > p {
+  padding: 10px 10vw;
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.faqsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
