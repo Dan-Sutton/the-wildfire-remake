@@ -41,12 +41,12 @@ export default function Songs() {
             <li>LAST NITE</li>
             <li>5 COLOURS IN HER HAIR</li>
             <li>SEX ON FIRE</li>
-            <li>EX&apos; AND OH&apos;S</li>
+            <li>EX’S AND OH’S</li>
             <li>GETTING STARTED</li>
             <li>HOLD BACK THE RIVER</li>
             <li>WHAT YOU KNOW</li>
             <li>DAKOTA</li>
-            <li>STACEY&apos;S MOM/ TEENAGE DIRTBAG</li>
+            <li>STACEY’S MOM/ TEENAGE DIRTBAG</li>
             <li>YELLOW</li>
             <li>AS IT WAS</li>
             <li>COME TOGETHER/LOSE YOURSELF</li>
