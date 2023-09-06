@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import bandImage from "../public/band-header-image.png";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
           event is not one to forget.
         </p>
       </section>
+
+      <div className={styles.packagesSpacer} id="packages"></div>
 
       <section className={styles.packages}>
         <h2>CATERING TO YOUR NEEDS</h2>
@@ -118,7 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.contact}>
+      <section className={styles.contact} id="contact">
         <h2>CONTACT</h2>
         <div className={styles.contactInput}>
           <div className={styles.topRowInputs}>
@@ -156,6 +159,8 @@ export default function Home() {
 
         <button>SUBMIT</button>
       </section>
+
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,61 @@
+.footer,
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerDark,
+.linksDark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 40px;
+  padding: 5px;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.iconDark {
+  font-size: 40px;
+  padding: 5px;
+  color: var(--highlight);
+  cursor: pointer;
+}
+
+.links h3 {
+  margin-right: 40px;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.linksDark h3 {
+  margin-right: 40px;
+  color: var(--highlight);
+  cursor: pointer;
+}
+
+.footer {
+  padding: 0 20px;
+  background-color: var(--highlight);
+}
+
+.footerDark {
+  padding: 0 20px;
+  background-color: var(--primary);
+}
+
+.info {
+  max-width: 30%;
+  font-size: 12px;
+  color: var(--primary);
+}
+
+.infoDark {
+  max-width: 30%;
+  font-size: 12px;
+  color: var(--highlight);
+}

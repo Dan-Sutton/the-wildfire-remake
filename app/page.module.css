@@ -84,6 +84,11 @@
   line-height: 28px;
 }
 
+.packagesSpacer {
+  width: 100%;
+  height: 30px;
+}
+
 .packages {
   position: relative;
   width: 100%;

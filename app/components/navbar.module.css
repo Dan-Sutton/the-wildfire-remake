@@ -33,6 +33,10 @@
   border-bottom: 1px solid white;
   transition: all 0.5s;
 }
+.link:hover {
+  border-bottom: 1px solid white;
+  transition: all 0.5s;
+}
 
 .link {
   cursor: pointer;
