@@ -3,8 +3,31 @@ import styles from "./page.module.css";
 import bandImage from "../public/band-header-image.png";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Home() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className={styles.home}>
       <Navbar />
@@ -123,41 +146,72 @@ export default function Home() {
 
       <section className={styles.contact} id="contact">
         <h2>CONTACT</h2>
-        <div className={styles.contactInput}>
-          <div className={styles.topRowInputs}>
-            <input placeholder="FIRST NAME*" required></input>
-            <input placeholder="LAST NAME*" required></input>
-          </div>
-          <div className={styles.bottomRowInputs}>
-            <input placeholder="EMAIL*" required></input>
-            <input placeholder="PHONE"></input>
-          </div>
-          <div className={styles.bottomRowInputs}>
-            <select name="packages">
+        <form ref={form} onSubmit={sendEmail}>
+          <div className={styles.contactInput}>
+            <div className={styles.topRowInputs}>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="FIRST NAME*"
+                required
+              ></input>
+              <input
+                type="text"
+                name="last_name"
+                placeholder="LAST NAME*"
+                required
+              ></input>
+            </div>
+            <div className={styles.bottomRowInputs}>
+              <input
+                type="text"
+                name="email"
+                placeholder="EMAIL*"
+                required
+              ></input>
+              <input type="text" name="phone" placeholder="PHONE"></input>
+            </div>
+            <div className={styles.bottomRowInputs}>
+              <input
+                type="date"
+                name="event_date"
+                placeholder="EVENT DATE"
+              ></input>
+              <input
+                type="text"
+                name="venue_location"
+                placeholder="VENUE LOCATION"
+              ></input>
+            </div>
+
+            <select name="package">
               <option value="" selected disabled>
                 SELECT PACKAGE
               </option>
-              <option value="notSure">Not Sure</option>
-              <option value="band">Band + Background Music</option>
-              <option value="dj">Band + DJ</option>
-              <option value="acoustic">Acoustic Band Setup</option>
+              <option value="Not Sure">Not Sure</option>
+              <option value="Band + Background Music">
+                Band + Background Music
+              </option>
+              <option value="Band + DJ">Band + DJ</option>
+              <option value="Acoustic Band Setup">Acoustic Band Setup</option>
             </select>
-            <input placeholder="VENUE LOCATION"></input>
+
+            <textarea name="message" placeholder="MESSAGE*"></textarea>
           </div>
 
-          <textarea placeholder="MESSAGE*"></textarea>
-        </div>
+          <p>
+            <i>Inputs marked with * are required</i>
+          </p>
 
-        <p>
-          <i>Inputs marked with * are required</i>
-        </p>
+          <p className={styles.contactInfo}>
+            <b>VIEW</b> our <b>FAQs</b> just in case any of
+            <br /> your questions are answered there!
+          </p>
 
-        <p className={styles.contactInfo}>
-          <b>VIEW</b> our <b>FAQs</b> just in case any of
-          <br /> your questions are answered there!
-        </p>
-
-        <button>SUBMIT</button>
+          <button type="submit" value="Send">
+            SUBMIT
+          </button>
+        </form>
       </section>
 
       <Footer />
