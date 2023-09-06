@@ -142,7 +142,7 @@ export default function Home() {
               <option value="dj">Band + DJ</option>
               <option value="acoustic">Acoustic Band Setup</option>
             </select>
-            <input placeholder="LOCATION"></input>
+            <input placeholder="VENUE LOCATION"></input>
           </div>
 
           <textarea placeholder="MESSAGE*"></textarea>
