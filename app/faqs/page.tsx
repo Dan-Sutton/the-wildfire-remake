@@ -1,7 +1,7 @@
-"use client";
 import Navbar from "../components/navbar";
 import styles from "./faqs.module.css";
 import FaqItem from "../components/faqItem";
+import Footer from "../components/footer";
 
 export default function Faqs() {
   return (
@@ -60,6 +60,7 @@ export default function Faqs() {
           />
         </div>
       </section>
+      <Footer dark={true} />
     </div>
   );
 }

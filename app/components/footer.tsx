@@ -1,4 +1,3 @@
-"use client";
 import styles from "./footer.module.css";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
