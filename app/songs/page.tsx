@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import styles from "./songs.module.css";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 export default function Songs() {
   return (
@@ -57,8 +58,11 @@ export default function Songs() {
         <div className={styles.message}>
           <h3>GOT A SONG SUGGESTION?</h3>
           <p>
-            <b>CONTACT</b> us and we’ll have a listen<br></br> and maybe even
-            add it to the list!
+            <Link className={styles.links} href={"/#contact"}>
+              <b>CONTACT</b>
+            </Link>{" "}
+            us and we’ll have a listen<br></br> and maybe even add it to the
+            list!
           </p>
         </div>
       </section>

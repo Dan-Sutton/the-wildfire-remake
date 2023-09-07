@@ -273,3 +273,8 @@
   border-style: none;
   opacity: 0;
 }
+
+.links {
+  color: white;
+  text-decoration: none;
+}

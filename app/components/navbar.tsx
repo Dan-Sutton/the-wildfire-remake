@@ -23,7 +23,7 @@ export default function Navbar() {
         <Link className={styles.link} href={"/songs"}>
           SONGS
         </Link>
-        <span>GALLERY</span>
+        {/* <span>GALLERY</span> */}
         <Link className={styles.link} href={"/faqs"}>
           FAQS
         </Link>

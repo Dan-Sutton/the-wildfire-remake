@@ -29,3 +29,8 @@
   gap: 30px;
   padding: 0 20%;
 }
+
+.links {
+  color: var(--primary);
+  text-decoration: none;
+}

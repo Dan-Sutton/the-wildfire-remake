@@ -6,12 +6,14 @@ import Footer from "./components/footer";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import dayjs from "dayjs";
+import Link from "next/link";
 
 export default function Home() {
   const form = useRef();
   const eventDate = useRef();
 
   const [inputDate, setInputDate] = useState("");
+  const [selectedPackage, setPackage] = useState();
 
   const focusDate = () => {
     eventDate.current.showPicker();
@@ -99,8 +101,10 @@ export default function Home() {
         <div className={styles.packageMessage}>
           <h3>HAD SOMETHING ELSE IN MIND?</h3>
           <p>
-            <b>CONTACT</b> us and we’re sure <br></br> we can provide a super
-            solution!
+            <Link className={styles.links} href={"/#contact"}>
+              <b>CONTACT</b>
+            </Link>{" "}
+            us and we’re sure <br></br> we can provide a super solution!
           </p>
         </div>
       </section>
@@ -229,7 +233,11 @@ export default function Home() {
           </p>
 
           <p className={styles.contactInfo}>
-            <b>VIEW</b> our <b>FAQs</b> just in case any of
+            View our{" "}
+            <Link className={styles.links} href={"/faqs"}>
+              <b>FAQs</b>
+            </Link>{" "}
+            just in case any of
             <br /> your questions are answered there!
           </p>
 

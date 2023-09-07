@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import styles from "./faqs.module.css";
 import FaqItem from "../components/faqItem";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 export default function Faqs() {
   return (
@@ -12,7 +13,11 @@ export default function Faqs() {
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p>
           Hopefully your question gets answered here, otherwise please don’t
-          hesitate to get in <b>CONTACT</b> with us.
+          hesitate to get in{" "}
+          <Link className={styles.links} href={"/#contact"}>
+            <b>CONTACT</b>
+          </Link>{" "}
+          with us.
         </p>
 
         <div className={styles.faqsList}>
@@ -43,7 +48,7 @@ export default function Faqs() {
           <FaqItem
             question={"HOW MUCH SPACE DO YOU REQUIRE?"}
             description={
-              "Two sets equating to 2:15 hours, with a break in the middle."
+              "We have played in some very small spaces, but ideally a minimum of around 2.5m x 6m."
             }
           />
           <FaqItem
