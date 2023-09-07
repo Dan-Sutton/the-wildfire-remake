@@ -214,7 +214,8 @@
 
 .topRowInputs > input,
 .bottomRowInputs > input,
-.contactInput select {
+.contactInput select,
+.datetimeText {
   border-style: none;
   height: 30px;
   width: 200px;
@@ -257,4 +258,18 @@
 .contactInput > textarea:focus-visible {
   outline: none;
   border-bottom: 2px solid #e8685c;
+}
+
+.datetime {
+  position: relative;
+}
+
+.datetimeInput {
+  position: absolute;
+  left: 0;
+  color: transparent;
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+  opacity: 0;
 }

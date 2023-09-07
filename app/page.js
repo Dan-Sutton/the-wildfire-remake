@@ -3,11 +3,24 @@ import styles from "./page.module.css";
 import bandImage from "../public/band-header-image.png";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import dayjs from "dayjs";
 
 export default function Home() {
   const form = useRef();
+  const eventDate = useRef();
+
+  const [inputDate, setInputDate] = useState("");
+
+  const focusDate = () => {
+    eventDate.current.showPicker();
+  };
+
+  const handleDateTime = (event) => {
+    const value = event.target.value;
+    setInputDate(dayjs(value).format("dddd MMMM D YYYY h:mma"));
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -172,11 +185,23 @@ export default function Home() {
               <input type="text" name="phone" placeholder="PHONE"></input>
             </div>
             <div className={styles.bottomRowInputs}>
-              <input
-                type="date"
-                name="event_date"
-                placeholder="EVENT DATE"
-              ></input>
+              <div className={styles.datetime}>
+                <input
+                  className={styles.datetimeText}
+                  onClick={focusDate}
+                  type="text"
+                  name="event_date"
+                  placeholder="EVENT DATE TIME"
+                  value={inputDate}
+                ></input>
+                <input
+                  className={styles.datetimeInput}
+                  type="datetime-local"
+                  ref={eventDate}
+                  onChange={handleDateTime}
+                ></input>
+              </div>
+
               <input
                 type="text"
                 name="venue_location"
