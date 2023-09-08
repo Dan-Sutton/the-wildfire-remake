@@ -52,3 +52,33 @@
   font-weight: bold;
   letter-spacing: 3px;
 }
+
+.hamburgerIcon {
+  opacity: 0;
+  font-size: 40px;
+}
+
+.hamburgerContain {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburgerIcon {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+  .link {
+    display: none;
+  }
+
+  .the,
+  .wildfire {
+    display: none;
+  }
+
+  .hamburgerContain {
+    display: contents;
+  }
+}

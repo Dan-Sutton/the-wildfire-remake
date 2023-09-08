@@ -1,6 +1,7 @@
 import styles from "./footer.module.css";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
+import Link from "next/link";
 
 type Props = {
   dark?: boolean;
@@ -14,10 +15,17 @@ export default function Footer({ dark = false }: Props) {
       </div>
 
       <div className={!dark ? styles.links : styles.linksDark}>
-        <h3>View FAQs</h3>
-
-        <AiFillFacebook className={!dark ? styles.icon : styles.iconDark} />
-        <AiOutlineInstagram className={!dark ? styles.icon : styles.iconDark} />
+        <Link className={styles.links} href={"/faqs"}>
+          <h3>View FAQs</h3>
+        </Link>{" "}
+        <Link href={"https://www.facebook.com/TheWildfireMusic"}>
+          <AiFillFacebook className={!dark ? styles.icon : styles.iconDark} />
+        </Link>
+        <Link href={"https://www.instagram.com/thewildfire_band/"}>
+          <AiOutlineInstagram
+            className={!dark ? styles.icon : styles.iconDark}
+          />
+        </Link>
       </div>
     </div>
   );
