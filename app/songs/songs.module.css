@@ -56,3 +56,14 @@
   color: var(--primary);
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .songsList {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0;
+  }
+  .songsList ul {
+    margin: none;
+  }
+}

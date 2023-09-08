@@ -278,3 +278,37 @@
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .home section {
+    padding: 15px;
+  }
+
+  .home h2 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 25px;
+    margin: 0;
+    word-wrap: break-word;
+  }
+
+  .about > p,
+  .packages > p {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 28px;
+  }
+
+  .packageCard {
+    transform: scale(0.8);
+    margin-top: -20px;
+  }
+}
