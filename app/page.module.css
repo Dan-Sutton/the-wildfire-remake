@@ -318,8 +318,15 @@
     transform: scale(0.75);
   }
 
+  .packageCard:hover {
+    color: var(--primary);
+    transform: scale(0.75);
+    background-color: var(--highlight);
+    transition: all 0.6s;
+  }
+
   .cards {
-    transform: translateX(10px);
+    transform: translateX(-4px);
   }
 
   .topRowInputs,

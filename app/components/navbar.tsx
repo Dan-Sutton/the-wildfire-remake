@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div>
+      <div className={styles.siteName}>
         <span>
           <span className={styles.the}>THE </span>
           <span className={styles.wildfire}>WILDFIRE</span>

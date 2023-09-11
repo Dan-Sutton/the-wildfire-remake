@@ -165,9 +165,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.packagesSpacer}></div>
+      <div className={styles.packagesSpacer} id="contact"></div>
 
-      <section className={styles.contact} id="contact">
+      <section className={styles.contact}>
         <h2>CONTACT</h2>
         <form ref={form} onSubmit={sendEmail}>
           <div className={styles.contactInput}>

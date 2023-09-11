@@ -66,6 +66,7 @@
   color: var(--primary);
   font-size: 35px;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .links {
@@ -124,10 +125,17 @@
 }
 
 @media (max-width: 768px) {
+  .siteName {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 25%;
+    right: 18%;
+  }
   .hamburgerIcon {
     opacity: 1;
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 0;
     transition: all 0.5s;
   }
@@ -135,17 +143,12 @@
   .hamburgerIconClose {
     opacity: 0;
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 0;
     font-size: 40px;
     transition: all 0.5s;
   }
   .link {
-    display: none;
-  }
-
-  .the,
-  .wildfire {
     display: none;
   }
 

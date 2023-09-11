@@ -68,4 +68,8 @@
   .songsList ul {
     margin: none;
   }
+
+  .info > p {
+    padding: 0;
+  }
 }
