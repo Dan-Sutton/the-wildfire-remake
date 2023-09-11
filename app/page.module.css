@@ -289,6 +289,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* transform: translateX(-10px); */
   }
 
   .home h2 {
@@ -299,6 +300,14 @@
     font-size: 25px;
     margin: 0;
     word-wrap: break-word;
+  }
+
+  .home .packages {
+    transform: translateX(4px);
+  }
+
+  .cards {
+    transform: translateX(-1px);
   }
 
   .about > p,
@@ -325,10 +334,6 @@
     transition: all 0.6s;
   }
 
-  .cards {
-    transform: translateX(-4px);
-  }
-
   .topRowInputs,
   .bottomRowInputs {
     flex-direction: column;
@@ -344,7 +349,7 @@
 
   .packageMessage {
     width: 100%;
-    transform: translateX(5px);
+    transform: translateX(-2px);
     padding: 0 3px;
     margin-top: -30px;
   }
@@ -357,6 +362,10 @@
   .quote p {
     display: flex;
     justify-content: center;
+  }
+
+  .home .contact section {
+    transform: translateX(-1px) !important;
   }
 }
 
