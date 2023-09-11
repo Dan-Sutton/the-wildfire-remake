@@ -76,22 +76,22 @@ export default function Navbar() {
         </span>
       </div>
       <div className={styles.links}>
-        <a className={styles.link} href={"/"}>
+        <Link className={styles.link} href={"/"}>
           HOME
-        </a>
-        <a className={styles.link} href="#packages">
+        </Link>
+        <Link className={styles.link} href="#packages">
           PACKAGES
-        </a>
-        <a className={styles.link} href="#contact">
+        </Link>
+        <Link className={styles.link} href="#contact">
           CONTACT
-        </a>
-        <a className={styles.link} href="/songs">
+        </Link>
+        <Link className={styles.link} href="/songs">
           SONGS
-        </a>
+        </Link>
         {/* <span>GALLERY</span> */}
-        <a className={styles.link} href="/faqs">
+        <Link className={styles.link} href="/faqs">
           FAQS
-        </a>
+        </Link>
 
         <AiOutlineMenu
           className={
