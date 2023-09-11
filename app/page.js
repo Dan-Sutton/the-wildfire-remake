@@ -54,6 +54,8 @@ export default function Home() {
         <img className={styles.bandImage} src={bandImage.src} alt="" />
       </section>
 
+      <div className={styles.packagesSpacer} id="packages"></div>
+
       <section className={styles.about}>
         <h2>ELEVATE YOUR EVENT</h2>
         <p>
