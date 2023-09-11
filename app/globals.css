@@ -17,6 +17,16 @@ body {
   }
   body {
     color: white;
-    background: black;
+    background: var(--primary);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: var(--primary);
   }
 }
