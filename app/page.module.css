@@ -227,6 +227,7 @@
   color: white;
   border-bottom: 2px solid white;
   font: openSans;
+  font-size: 16px;
 }
 
 .contactInput select {
@@ -240,6 +241,7 @@
   background-color: var(--highlight);
   padding: 10px;
   font: arial;
+  font-size: 16px;
 }
 
 .contact button {

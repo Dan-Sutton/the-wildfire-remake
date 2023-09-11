@@ -39,7 +39,7 @@ export default function Home() {
         (result) => {
           console.log(result.text);
           e.target.reset();
-          setInputDate('');
+          setInputDate("");
           Swal.fire({
             position: "top-end",
             icon: "success",
@@ -50,6 +50,13 @@ export default function Home() {
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "There was a problem sending your email.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       );
   };
