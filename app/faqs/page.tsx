@@ -24,7 +24,7 @@ export default function Faqs() {
           <FaqItem
             question={"HOW LONG DO YOU PLAY FOR?"}
             description={
-              "Two sets equating to two hours, with a break in the middle. Generally our first set will be 45 minutes, and the second set at 75 minutes."
+              "Two sets with a break in the middle. Generally our first set will be 45 minutes, and the second set at 75 minutes."
             }
           />
           <FaqItem
