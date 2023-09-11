@@ -73,11 +73,13 @@
   .info {
     padding: 5px;
     max-width: 50%;
+    font-size: 8px;
   }
 
   .links h3,
   .linksDark h3 {
     margin-right: -0.5px;
+    font-size: 12px;
   }
 
   .footer,

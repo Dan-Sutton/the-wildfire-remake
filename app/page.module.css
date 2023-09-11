@@ -339,10 +339,20 @@
     width: 100%;
     transform: translateX(5px);
     padding: 0 3px;
+    margin-top: -30px;
   }
 
   .quotes {
     width: 80vw;
     transform: translateX(-6px);
+  }
+
+  .headerTitle {
+    height: 520px;
+  }
+
+  .bandImage {
+    width: 80vw;
+    top: 10%;
   }
 }

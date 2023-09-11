@@ -54,7 +54,7 @@ export default function Home() {
         <img className={styles.bandImage} src={bandImage.src} alt="" />
       </section>
 
-      <div className={styles.packagesSpacer} id="packages"></div>
+      <div className={styles.packagesSpacer}></div>
 
       <section className={styles.about}>
         <h2>ELEVATE YOUR EVENT</h2>
@@ -111,6 +111,8 @@ export default function Home() {
         </div>
       </section>
 
+      <div className={styles.packagesSpacer}></div>
+
       <section className={styles.testimonials}>
         <h2>WHAT ARE PEOPLE SAYING?</h2>
         <div className={styles.quotes}>
@@ -162,6 +164,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className={styles.packagesSpacer}></div>
 
       <section className={styles.contact} id="contact">
         <h2>CONTACT</h2>
@@ -248,6 +252,8 @@ export default function Home() {
           </button>
         </form>
       </section>
+
+      <div className={styles.packagesSpacer}></div>
 
       <Footer />
     </div>
