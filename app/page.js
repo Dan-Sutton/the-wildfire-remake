@@ -7,6 +7,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import dayjs from "dayjs";
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 export default function Home() {
   const form = useRef();
@@ -37,6 +38,15 @@ export default function Home() {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
+          setInputDate('');
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your Email was sent!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         },
         (error) => {
           console.log(error.text);
@@ -202,7 +212,7 @@ export default function Home() {
                   type="text"
                   name="event_date"
                   placeholder="EVENT DATE TIME"
-                  value={inputDate}
+                  defaultValue={inputDate}
                 ></input>
                 <input
                   className={styles.datetimeInput}
@@ -219,8 +229,8 @@ export default function Home() {
               ></input>
             </div>
 
-            <select name="package">
-              <option value="" selected disabled>
+            <select name="package" defaultValue={"DEFAULT"}>
+              <option value="DEFAULT" disabled>
                 SELECT PACKAGE
               </option>
               <option value="Not Sure">Not Sure</option>

@@ -275,6 +275,7 @@
   outline: none;
   border-style: none;
   opacity: 0;
+  z-index: 10;
 }
 
 .links {
@@ -348,6 +349,10 @@
   .datetimeText,
   .contactInput textarea {
     width: 80vw;
+  }
+
+  .contactInput textarea {
+    color: var(--primary);
   }
 
   .packageMessage {
