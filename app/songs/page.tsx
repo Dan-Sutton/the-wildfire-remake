@@ -8,6 +8,7 @@ export default function Songs() {
     <div className={styles.songs}>
       <Navbar />
 
+      <div className={styles.spacer}></div>
       <section className={styles.info}>
         <h2>OUR SONGS</h2>
         <p>

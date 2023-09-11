@@ -1,16 +1,68 @@
 "use client";
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import { AiOutlineMenu } from "react-icons/ai";
-import Hamburger from "./hamburger";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className={styles.navbar}>
-      <div className={styles.hamburgerContain}>
-        <Hamburger open={openMenu}></Hamburger>
+      <div className={openMenu ? styles.menu : styles.menuClose}>
+        <AiOutlineClose
+          className={styles.closeMenuButton}
+          onClick={() => {
+            setOpenMenu(!openMenu);
+          }}
+        ></AiOutlineClose>
+        <div className={styles.sideMenuLinks}>
+          <Link
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+            className={styles.menuLink}
+            href={"/"}
+          >
+            HOME
+          </Link>
+          <Link
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+            className={styles.menuLink}
+            href={"/#packages"}
+          >
+            PACKAGES
+          </Link>
+          <Link
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+            className={styles.menuLink}
+            href={"/#contact"}
+          >
+            CONTACT
+          </Link>
+          <Link
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+            className={styles.menuLink}
+            href={"/songs"}
+          >
+            SONGS
+          </Link>
+          {/* <span>GALLERY</span> */}
+          <Link
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+            className={styles.menuLink}
+            href={"/faqs"}
+          >
+            FAQS
+          </Link>
+        </div>
       </div>
 
       <div>
@@ -37,12 +89,16 @@ export default function Navbar() {
           FAQS
         </Link>
 
-        <AiOutlineMenu
-          className={styles.hamburgerIcon}
-          onClick={() => {
-            setOpenMenu(!setOpenMenu);
-          }}
-        ></AiOutlineMenu>
+        {!openMenu ? (
+          <AiOutlineMenu
+            className={styles.hamburgerIcon}
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+          ></AiOutlineMenu>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

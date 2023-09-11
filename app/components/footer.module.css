@@ -70,7 +70,8 @@
     transform: scale(0.95);
   }
 
-  .info {
+  .info,
+  .infoDark {
     padding: 5px;
     max-width: 50%;
     font-size: 8px;

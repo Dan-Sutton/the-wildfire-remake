@@ -347,8 +347,15 @@
     transform: translateX(-6px);
   }
 
+  .quote p {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
   .headerTitle {
-    height: 520px;
+    height: 100vw;
   }
 
   .bandImage {
