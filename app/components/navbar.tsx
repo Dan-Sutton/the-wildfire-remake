@@ -79,10 +79,10 @@ export default function Navbar() {
         <a className={styles.link} href={"/"}>
           HOME
         </a>
-        <a className={styles.link} href={"/#packages"}>
+        <a className={styles.link} href={"#packages"}>
           PACKAGES
         </a>
-        <a className={styles.link} href={"/#contact"}>
+        <a className={styles.link} href={"#contact"}>
           CONTACT
         </a>
         <a className={styles.link} href={"/songs"}>
