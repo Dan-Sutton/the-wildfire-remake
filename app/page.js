@@ -79,7 +79,7 @@ export default function Home() {
           The Wildfire are a fresh and energetic function/party band bringing a
           dynamic blend of genres, from timeless classics to modern hits,
           ensuring that every guest finds their groove on the dance floor. We
-          provide a professional and unforgettable experience, so that your is
+          provide a professional and unforgettable experience, so that your
           event is not one to forget.
         </p>
       </section>
