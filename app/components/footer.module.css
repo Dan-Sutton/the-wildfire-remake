@@ -63,3 +63,28 @@
 .links {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .footer,
+  .links {
+    transform: scale(0.95);
+  }
+
+  .info {
+    padding: 5px;
+    max-width: 50%;
+  }
+
+  .links h3,
+  .linksDark h3 {
+    margin-right: -0.5px;
+  }
+
+  .footer,
+  .footerDark {
+    width: 100%;
+    transform: translateX(0);
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.about}>
+      <section className={styles.testimonials}>
         <h2>WHAT ARE PEOPLE SAYING?</h2>
         <div className={styles.quotes}>
           <div className={styles.quote}>
