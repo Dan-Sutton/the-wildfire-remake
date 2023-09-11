@@ -20,7 +20,7 @@ export default function Navbar() {
             openMenu ? styles.sideMenuLinks : styles.sideMenuLinksClose
           }
         >
-          <Link
+          <a
             onClick={() => {
               setOpenMenu(!openMenu);
             }}
@@ -28,26 +28,26 @@ export default function Navbar() {
             href={"/"}
           >
             HOME
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={() => {
               setOpenMenu(!openMenu);
             }}
             className={styles.menuLink}
-            href={"/#packages"}
+            href={"#packages"}
           >
             PACKAGES
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={() => {
               setOpenMenu(!openMenu);
             }}
             className={styles.menuLink}
-            href={"/#contact"}
+            href={"#contact"}
           >
             CONTACT
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={() => {
               setOpenMenu(!openMenu);
             }}
@@ -55,9 +55,9 @@ export default function Navbar() {
             href={"/songs"}
           >
             SONGS
-          </Link>
+          </a>
           {/* <span>GALLERY</span> */}
-          <Link
+          <a
             onClick={() => {
               setOpenMenu(!openMenu);
             }}
@@ -65,7 +65,7 @@ export default function Navbar() {
             href={"/faqs"}
           >
             FAQS
-          </Link>
+          </a>
         </div>
       </div>
 
