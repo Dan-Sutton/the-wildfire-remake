@@ -34,7 +34,7 @@ export default function Navbar() {
               setOpenMenu(!openMenu);
             }}
             className={styles.menuLink}
-            href={"#packages"}
+            href={"/#packages"}
           >
             PACKAGES
           </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
               setOpenMenu(!openMenu);
             }}
             className={styles.menuLink}
-            href={"#contact"}
+            href={"/#contact"}
           >
             CONTACT
           </a>
