@@ -283,6 +283,9 @@
 }
 
 @media (max-width: 768px) {
+  .home {
+    margin-top: 40px;
+  }
   .home section {
     padding: 10px 0;
     display: flex;

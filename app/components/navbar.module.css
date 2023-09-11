@@ -126,13 +126,13 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    top: 25%;
+    top: 35%;
     right: 18%;
   }
   .hamburgerIcon {
     opacity: 1;
     position: absolute;
-    top: 0;
+    top: 15%;
     left: 0;
     transition: all 0.5s;
   }
@@ -151,5 +151,9 @@
 
   .hamburgerContain {
     display: contents;
+  }
+
+  .navbar {
+    height: 30px;
   }
 }
