@@ -19,6 +19,7 @@
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 17px;
+  width: 80%;
 }
 
 .expandButton {
@@ -61,4 +62,10 @@
   font-size: 14px;
   letter-spacing: 2px;
   transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+  .expandButton {
+    bottom: 13px;
+  }
 }

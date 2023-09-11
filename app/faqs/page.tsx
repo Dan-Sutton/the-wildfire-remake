@@ -8,7 +8,7 @@ export default function Faqs() {
   return (
     <div className={styles.faqs}>
       <Navbar />
-
+      <div className={styles.spacer}></div>
       <section className={styles.info}>
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p>

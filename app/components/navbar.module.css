@@ -13,7 +13,7 @@
 
 .menu {
   min-height: 100vh;
-  width: 50vw;
+  width: 70vw;
   position: fixed;
   left: 0;
   top: 0;
@@ -22,9 +22,11 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
+  transition: all 0.5s;
 }
 
 .menuClose {
+  color: transparent;
   min-height: 100vh;
   width: 0vw;
   position: fixed;
@@ -36,6 +38,7 @@
   backdrop-filter: blur(6.8px);
   -webkit-backdrop-filter: blur(6.8px);
   overflow: hidden;
+  transition: all 0.5s;
 }
 
 .sideMenuLinks {
@@ -44,6 +47,17 @@
   display: flex;
   padding: 30px;
   flex-direction: column;
+  transition: all 0.5s;
+}
+
+.sideMenuLinksClose {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .menuLink {
@@ -101,10 +115,6 @@
   font-size: 40px;
 }
 
-.hamburgerContain {
-  display: none;
-}
-
 .closeMenuButton {
   font-size: 40px;
   color: var(--primary);
@@ -119,6 +129,16 @@
     position: absolute;
     top: 5px;
     left: 0;
+    transition: all 0.5s;
+  }
+
+  .hamburgerIconClose {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 40px;
+    transition: all 0.5s;
   }
   .link {
     display: none;

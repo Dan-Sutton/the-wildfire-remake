@@ -15,7 +15,11 @@ export default function Navbar() {
             setOpenMenu(!openMenu);
           }}
         ></AiOutlineClose>
-        <div className={styles.sideMenuLinks}>
+        <div
+          className={
+            openMenu ? styles.sideMenuLinks : styles.sideMenuLinksClose
+          }
+        >
           <Link
             onClick={() => {
               setOpenMenu(!openMenu);
@@ -89,16 +93,14 @@ export default function Navbar() {
           FAQS
         </Link>
 
-        {!openMenu ? (
-          <AiOutlineMenu
-            className={styles.hamburgerIcon}
-            onClick={() => {
-              setOpenMenu(!openMenu);
-            }}
-          ></AiOutlineMenu>
-        ) : (
-          ""
-        )}
+        <AiOutlineMenu
+          className={
+            !openMenu ? styles.hamburgerIcon : styles.hamburgerIconClose
+          }
+          onClick={() => {
+            setOpenMenu(!openMenu);
+          }}
+        ></AiOutlineMenu>
       </div>
     </div>
   );
