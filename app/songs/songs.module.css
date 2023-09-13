@@ -64,9 +64,18 @@
     flex-direction: column;
     gap: 0px;
     padding: 0;
+    width: 80vw;
+    transform: translateX(-25px);
   }
   .songsList ul {
     margin: none;
+    margin-bottom: -15px;
+  }
+
+  .songsList li {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 500;
   }
 
   .info > p {

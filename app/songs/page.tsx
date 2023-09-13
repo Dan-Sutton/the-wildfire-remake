@@ -59,9 +59,9 @@ export default function Songs() {
         <div className={styles.message}>
           <h3>GOT A SONG SUGGESTION?</h3>
           <p>
-            <Link className={styles.links} href={"/#contact"}>
+            <a className={styles.links} href={"/#contact"}>
               <b>CONTACT</b>
-            </Link>{" "}
+            </a>{" "}
             us and we’ll have a listen<br></br> and maybe even add it to the
             list!
           </p>

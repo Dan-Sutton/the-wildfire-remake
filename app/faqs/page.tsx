@@ -14,9 +14,9 @@ export default function Faqs() {
         <p>
           Hopefully your question gets answered here, otherwise please don’t
           hesitate to get in{" "}
-          <Link className={styles.links} href={"/#contact"}>
+          <a className={styles.links} href={"/#contact"}>
             <b>CONTACT</b>
-          </Link>{" "}
+          </a>{" "}
           with us.
         </p>
 

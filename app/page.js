@@ -120,9 +120,9 @@ export default function Home() {
         <div className={styles.packageMessage}>
           <h3>HAD SOMETHING ELSE IN MIND?</h3>
           <p>
-            <Link className={styles.links} href={"/#contact"}>
+            <a className={styles.links} href={"/#contact"}>
               <b>CONTACT</b>
-            </Link>{" "}
+            </a>{" "}
             us and we’re sure <br></br> we can provide a super solution!
           </p>
         </div>
@@ -257,9 +257,9 @@ export default function Home() {
 
           <p className={styles.contactInfo}>
             View our{" "}
-            <Link className={styles.links} href={"/faqs"}>
+            <a className={styles.links} href={"/faqs"}>
               <b>FAQs</b>
-            </Link>{" "}
+            </a>{" "}
             just in case any of
             <br /> your questions are answered there!
           </p>
