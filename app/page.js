@@ -79,12 +79,12 @@ export default function Home() {
           The Wildfire are a fresh and energetic function/party band bringing a
           dynamic blend of genres, from timeless classics to modern hits,
           ensuring that every guest finds their groove on the dance floor. We
-          provide a professional and unforgettable experience, so that your
-          event is not one to forget.
+          provide a professional<span id="packages"></span> and unforgettable
+          experience, so that your event is not one to forget.
         </p>
       </section>
 
-      <div className={styles.packagesSpacer} id="packages"></div>
+      <div className={styles.packagesSpacer}></div>
 
       <section className={styles.packages}>
         <h2>CATERING TO YOUR NEEDS</h2>
@@ -177,12 +177,12 @@ export default function Home() {
               recommend them enough!“
             </p>
             <h4>Royal Fountain Inn</h4>
-            <p>★★★★★</p>
+            <p id="contact">★★★★★</p>
           </div>
         </div>
       </section>
 
-      <div className={styles.packagesSpacer} id="contact"></div>
+      <div className={styles.packagesSpacer}></div>
 
       <section className={styles.contact}>
         <h2>CONTACT</h2>
