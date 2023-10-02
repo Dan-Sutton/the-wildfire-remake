@@ -48,7 +48,7 @@ export default function Faqs() {
           <FaqItem
             question={"HOW MUCH SPACE DO YOU REQUIRE?"}
             description={
-              "We have played in some very small spaces, but ideally a minimum of around 2.5m x 6m."
+              "We have played in some very small spaces, but ideally a minimum of around 3.5m x 6m."
             }
           />
           <FaqItem
