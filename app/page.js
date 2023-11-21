@@ -238,7 +238,7 @@ export default function Home() {
 
             <select name="package" defaultValue={"DEFAULT"}>
               <option value="DEFAULT" disabled>
-                SELECT PACKAGE
+                PACKAGE
               </option>
               <option value="Not Sure">Not Sure</option>
               <option value="Band + Background Music">
@@ -246,6 +246,17 @@ export default function Home() {
               </option>
               <option value="Band + DJ">Band + DJ</option>
               <option value="Acoustic Band Setup">Acoustic Band Setup</option>
+            </select>
+
+            <select name="event_type" defaultValue={"DEFAULT"}>
+              <option value="DEFAULT" disabled>
+                EVENT TYPE
+              </option>
+              <option value="Wedding">Wedding</option>
+              <option value="Private Event">Private Event</option>
+              <option value="Corporate Event">Corporate Event</option>
+              <option value="Public Event">Public Event e.g Pub/Bar</option>
+              <option value="Other">Other</option>
             </select>
 
             <textarea name="message" placeholder="MESSAGE*"></textarea>
